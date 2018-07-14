@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Index page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <header class="header">
+        <div class="header__inner inner">
+          <ul class="header__icons"> <a href="#" class="header__icon js-icon">
+				<span class="header__icon-fullscreen">
+<svg class="icon icon-fullscreen"><use xlink:href="img/sprite.svg#icon-fullscreen"></use></svg>
+</span>
+			</a> <a href="#" class="header__icon js-icon">
+				<span class="header__icon-chat">
+<svg class="icon icon-chat"><use xlink:href="img/sprite.svg#icon-chat"></use></svg>
+</span>
+				<span class="header__icon-number">7</span>
+			</a> <a href="#" class="header__icon js-icon">
+				<span class="header__icon-notification">
+<svg class="icon icon-notification"><use xlink:href="img/sprite.svg#icon-notification"></use></svg>
+</span>
+				<span class="header__icon-number">12</span>
+			</a> </ul> <button class="header__menu-btn menu-btn js-menu-btn">
+			<span class="menu-btn__line-small"></span>
+			<span class="menu-btn__line"></span>
+			<span class="menu-btn__line-big"></span>
+		</button> </div>
+      </header>
+      <!-- begin content -->
+      <div class="content">
+        <div class="content__inner inner">
+          <div class="content__wrap">
+            <div class="aside">
+              <div class="aside__wrap"></div>
+            </div>
+            <div class="main">
+              <div class="main__apartament apartament">
+                <div class="apartament__top">
+                  <h1 class="apartament__title title-lg">Создание квартиры</h1>
+                  <div class="apartament__button"> <button class="apartament__btn-back btn-back">
+								Назад
+							</button> <button class="btn-create">Создать</button> </div>
+                </div>
+                <div class="apartament__form">
+                  <form action="/">
+                    <!-- begin apartament__group -->
+                    <div class="apartament__group">
+                      <div class="apartament__row">
+                        <div class="apartament__col">
+                          <div class="apartament__step step"> <span class="step__number">1</span>
+                            <h2 class="step__title title-md">Добавьте данные по квартире</h2>
+                          </div>
+                          <div class="apartament__col-in">
+                            <div class="apartament__form-apartament form-apartament"> <input type="text" placeholder="Номер квартири *" class="form-apartament__field" required> <span class="form-apartament__required">* Обязательно</span> </div>
+                            <div class="apartament__row">
+                              <div class="apartament__col">
+                                <div class="apartament__form-apartament form-apartament"> <input type="text" placeholder="Индекс квартири" class="form-apartament__field" required> </div>
+                              </div>
+                              <div class="apartament__col">
+                                <div class="apartament__form-apartament form-apartament"> <input type="text" placeholder="Общая площадь*" class="form-apartament__field" required> </div>
+                              </div>
+                            </div>
+                            <div class="apartament__row">
+                              <div class="apartament__col">
+                                <div class="apartament__form-apartament form-apartament"> <input type="text" placeholder="Жилая площадь*" class="form-apartament__field" required> </div>
+                              </div>
+                              <div class="apartament__col">
+                                <div class="apartament__form-apartament form-apartament"> <input type="text" placeholder="Отапливаемая площадь*" class="form-apartament__field" required> </div>
+                              </div>
+                            </div>
+                            <div class="apartament__form-apartament form-apartament"> <select class="js-select" name="state" style="width:100%">
+													<option></option>
+												  	<option value="AL`">1</option>
+												  	<option value="WY">2</option>
+												</select> </div>
+                          </div>
+                        </div>
+                        <div class="apartament__col">
+                          <div class="apartament__step step"> <span class="step__number">2</span>
+                            <h2 class="step__title title-md">Подключите активные приборы в учета</h2>
+                          </div>
+                          <div class="apartament__col-in">
+                            <div class="apartament__form-checkbox form-checkbox">
+                              <div class="form-checkbox__info">*В вашем доме уже есть установленные приборы учета. Вы можете подключить их.</div> <label class="form-checkbox__block">
+													<span class="form-checkbox__label-top">Подключить активные приборы учета</span>
+													<input type="checkbox" checked="checked" class="form-checkbox__field"/>
+													<div class="form-checkbox__indicator"></div>
+												</label> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end apartament__group -->
+                    <!-- begin apartament__group -->
+                    <div class="apartament__group">
+                      <div class="apartament__row">
+                        <div class="apartament__col">
+                          <div class="apartament__step step"> <span class="step__number">1</span>
+                            <h2 class="step__title title-md">Добавьте данные по квартире</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="apartament__row">
+                        <div class="apartament__col">
+                          <div class="apartament__col-in">
+                            <div class="apartament__form-checkbox form-checkbox"> <label class="form-checkbox__block">
+													<span class="form-checkbox__label">Электроэнергия</span>
+													<input type="checkbox" checked="checked" class="form-checkbox__field"/>
+												    <div class="form-checkbox__indicator"></div>
+												</label> </div>
+                            <div class="apartament__form-checkbox"> <label class="form-checkbox__block">
+													<span class="form-checkbox__label">Теплооэнергия</span>
+													<input type="checkbox" checked="checked" class="form-checkbox__field"/>
+													<div class="form-checkbox__indicator"></div>
+												</label> </div>
+                            <div class="apartament__form-checkbox"> <label class="form-checkbox__block">
+													<span class="form-checkbox__label">Водосчетчик (горячая вода)</span>
+													<input type="checkbox" checked="checked" class="form-checkbox__field"/>
+													<div class="form-checkbox__indicator"></div>
+												</label> </div>
+                            <div class="apartament__form-checkbox"> <label class="form-checkbox__block">
+													<span class="form-checkbox__label">Газ</span>
+													<input type="checkbox" checked="checked" class="form-checkbox__field"/>
+													<div class="form-checkbox__indicator"></div>
+												</label> </div>
+                          </div>
+                        </div>
+                        <div class="apartament__col">
+                          <div class="apartament__form-checkbox form-checkbox"> <label class="form-checkbox__block">
+												<span class="form-checkbox__label">Электроэнергия (двухзонный)</span>
+												<input type="checkbox" checked="checked" class="form-checkbox__field"/>
+												<div class="form-checkbox__indicator"></div>
+											</label> </div>
+                          <div class="apartament__form-checkbox"> <label class="form-checkbox__block">
+												<span class="form-checkbox__label">Водосчетчик</span>
+												<input type="checkbox" checked="checked" class="form-checkbox__field"/>
+												<div class="form-checkbox__indicator"></div>
+											</label> </div>
+                          <div class="apartament__form-checkbox"> <label class="form-checkbox__block">
+												<span class="form-checkbox__label">Водоотведение</span>
+												<input type="checkbox" checked="checked" class="form-checkbox__field"/>
+												<div class="form-checkbox__indicator"></div>
+											</label> </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end apartament__group -->
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

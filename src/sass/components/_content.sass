@@ -1,0 +1,217 @@
+.content
+	background-color: $wildSand
+	&__wrap
+		+clr
+
+.aside
+	margin-top: -152px
+	float: left
+	width: 23.5%
+	height: 1790px
+	background-color: $gray
+	border: 1px solid $darkGray
+	border-radius: 5px
+	margin-right: 30px
+	+lg
+		float: none
+		width: 100%
+		height: 300px
+		margin-bottom: 20px
+	
+
+.main
+	width: 72%
+	margin-top: -152px
+	float: left
+	background-color: $white
+	padding: 30px 40px 150px 40px
+	width: 73.9%
+	border-radius: 5px
+	+lg
+		float: none
+		width: 100%
+		margin-top: 0
+	+sm
+		padding: 15px 
+
+		
+.apartament
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-bottom: 22px
+		+sm
+			flex-direction: column
+	&__title
+		+sm
+			order: 1
+			margin-top: 20px
+	&__btn-back
+		margin-right: 30px
+		+sm
+			margin-bottom: 20px
+		+r(450)
+			margin-right: 0
+	&__group
+		padding-top: 20px
+		border-top: 1px solid $athensGray
+	&__step
+		margin-bottom: 40px
+	&__row
+		display: flex
+		margin: 0 -17px
+		+lg
+			display: block
+	&__col
+		width: 50%
+		padding: 0 17px
+		+lg
+			width: 100%
+	&__col-in
+		padding-left: 22px
+		+md
+			padding-left: 0
+	&__form-apartament
+		margin-bottom: 50px
+		+sm
+			margin-bottom: 30px
+
+
+.step
+	display: flex
+	align-items: center
+	&__number
+		border-radius: 50%
+		flex: none
+		border: 1px solid $darkGray
+		width: 35px
+		height: 35px
+		line-height: 35px
+		text-align: center
+		background-color: #f5f5f5
+		margin-right: 15px 
+
+.form-apartament
+	position: relative
+	&__field
+		width: 100%
+		padding: 25px 5px 22px 20px
+		background-color: $alabaster
+		border-bottom: 1px solid $iron
+		+placeholder
+			color: $iron
+			font-family: $montserrat
+			font-size: 12px
+	&__required
+		position: absolute
+		top: 73px
+		left: 20px
+		font-size: 12px
+
+.form-checkbox
+	&__block
+		position: relative
+		display: block
+		margin-bottom: 40px
+	&__label-top
+		padding: 20px 75px 20px 0
+		display: inline-block 
+	&__label
+		background-color: $alabaster
+		border-radius: 20px
+		padding: 20px 25px
+		margin-right: 80px
+		display: inline-block
+		vertical-align: middle
+		+sm
+			padding: 10px 15px  
+	&__field
+		display: none
+	&__info
+		margin-bottom: 80px
+		color: $osloGray
+		font-weight: 500 
+		+sm
+			margin-bottom: 30px
+		
+		
+.form-checkbox__field:not(:checked) + .form-checkbox__indicator:before,
+.form-checkbox__field:checked + .form-checkbox__indicator:before
+	content: ''
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	right: 0
+	height: 28px
+	width: 72px
+	border-radius: 15px
+	+sm
+		height: 14px
+		width: 36px
+
+.form-checkbox__field:not(:checked) + .form-checkbox__indicator:before
+	background-color: $gray
+
+.form-checkbox__field:checked + .form-checkbox__indicator:before
+	background-color: #c4cdff
+
+.form-checkbox__field:not(:checked) + .form-checkbox__indicator:after
+	content: ''
+	position: absolute
+	border-radius: 50%
+	right: 30px
+	top: 50%
+	transform: translateY(-50%)
+	width: 40px
+	height: 40px
+	background-color: $gray
+	transition: all 0.3s
+	+sm
+		width: 20px
+		height: 20px
+		right: 15px
+
+.form-checkbox__field:checked + .form-checkbox__indicator:after
+	content: ''
+	position: absolute
+	border-radius: 50%
+	right: -5px
+	top: 50%
+	transform: translateY(-50%)
+	width: 40px
+	height: 40px
+	background-color: $slateBlue
+	transition: all 0.3s
+	+sm
+		width: 20px
+		height: 20px
+		right: -3px
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+	line-height: 63px
+.select2-container .select2-selection--single
+	height: 63px
+.select2-container--default .select2-selection--single .select2-selection__arrow
+	top: 19px
+	right: 20px
+.select2-container .select2-selection--single .select2-selection__rendered
+	padding-left: 20px
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+	border-width: 10px 10px 0
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+	border-width: 0 10px 10px
+.select2-results__option
+	padding: 10px 20px 10px 20px 
+.select2-container--default .select2-selection--single .select2-selection__clear
+	right: 15px
+.select2-container--default .select2-selection--single
+	border-bottom: 3px solid $slateBlue
+	border-top: none
+	border-left: none
+	border-right: none
+	background-color: $alabaster
+
+.select2-container--default .select2-selection--single 
+	border-radius: 0

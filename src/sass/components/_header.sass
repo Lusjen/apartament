@@ -1,0 +1,56 @@
+.header
+	background-color: $blue
+	padding: 45px 0 280px
+	position: relative
+	&__icons
+		display: flex
+		margin-right: 270px
+		justify-content: flex-end
+		+sm
+			justify-content: flex-start
+			margin-right: auto
+	&__icon
+		position: relative
+		&:not(:last-child)
+			margin-right: 85px
+			+sm
+				margin-right: 30px
+	&__icon-fullscreen
+		.icon-fullscreen
+			font-size: 32px
+			fill: $white
+			transition: fill 0.5s
+			&:hover
+				fill: $osloGray
+	&__icon-chat
+		position: relative
+		.icon-chat
+			font-size: 37px
+			fill: $white
+			transition: fill 0.5s
+			&:hover
+				fill: $osloGray
+	&__icon-notification
+		.icon-notification
+			font-size: 37px
+			fill: $white
+			transition: fill 0.5s
+			&:hover
+				fill: $osloGray
+	&__icon-number
+		position: absolute
+		background-color: $red
+		width: 35px
+		height: 35px
+		line-height: 35px
+		border-radius: 50%
+		text-align: center
+		color: $white
+		top: -17px
+		right: -22px 
+	&__menu-btn
+		position: absolute
+		top: -12px
+		right: 25px
+		+sm
+			top: 0
